@@ -12,3 +12,9 @@ docs/
 
 # Dotenv file
 .env
+.password
+
+# Ignore all files in the broadcast directory
+broadcast/
+
+lib/
