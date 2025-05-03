@@ -16,5 +16,3 @@ docs/
 
 # Ignore all files in the broadcast directory
 broadcast/
-
-lib/

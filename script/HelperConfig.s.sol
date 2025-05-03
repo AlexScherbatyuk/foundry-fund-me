@@ -1,8 +1,4 @@
 // SPDX-License-Identifier: MIT
-
-// 1. Deploy mocks when we are on a local anvil chain
-// 2. Keep track of the contract address across different chains
-
 pragma solidity ^0.8.28;
 
 import {Script} from "forge-std/Script.sol";
@@ -31,7 +27,6 @@ contract HelperConfig is Script {
     }
 
     function getSepoliaEthConfig() public pure returns (NetworkConfig memory) {
-        //price feed
         NetworkConfig memory sepoliaConfig = NetworkConfig({
             ethUsdPriceFeed: 0x694AA1769357215DE4FAC081bf1f309aDC325306
         });
@@ -39,7 +34,6 @@ contract HelperConfig is Script {
     }
 
     function getMainnetEthConfig() public pure returns (NetworkConfig memory) {
-        //price feed
         NetworkConfig memory ethConfig = NetworkConfig({
             ethUsdPriceFeed: 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
         });
@@ -50,7 +44,6 @@ contract HelperConfig is Script {
         if (activeNetworkConfig.ethUsdPriceFeed != address(0)) {
             return activeNetworkConfig;
         }
-        //price feed
         vm.startBroadcast();
         MockV3Aggregator mockPriceFeed = new MockV3Aggregator(
             DECIMALS,
