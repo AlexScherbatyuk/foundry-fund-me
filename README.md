@@ -4,8 +4,8 @@
 
 ## Quickstart
 ```shell
-$ git clone https://github.com/Cyfrin/foundry-fund-me-cu
-$ cd foundry-fund-me-cu
+$ git clone https://github.com/alexscherbatyuk/foundry-fund-me.git
+$ cd foundry-fund-me
 $ make install
 ```
 
