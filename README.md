@@ -40,13 +40,22 @@ $ make deploy
 ### Interact with the deployed contract
 
 #### Fund
-
+##### anvil  
 ```shell
 $ make fund
 ```
+##### sepolia
+```shell
+$ make sepolia fund
+```
 
 #### Withdraw
-
+##### anvil 
 ```shell
 $ make withdraw
+```
+
+##### sepolia
+```shell
+$ make sepolia fund
 ```
