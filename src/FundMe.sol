@@ -8,6 +8,9 @@ import {PriceConverter} from "./PriceConverter.sol";
  * @title A simple FundMe contract
  * @author Alexander Scherbatyuk
  * @notice This is a simple crowd fundraising contract
+ * @dev This contract utilizes Chainlink price data feed,
+ * Price Feed Contract Addresses are available by url below
+ * https://docs.chain.link/data-feeds/price-feeds/addresses
  */
 contract FundMe {
     /* Errors */
